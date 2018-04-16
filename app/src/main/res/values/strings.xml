@@ -1,0 +1,14 @@
+<resources>
+    <string name="title_activity_maps">MapQuiz</string>
+    <string name="app_name">MapQuiz</string>
+    <string name="double_quotes">\"%s\"</string>
+    <string name="kilometers_left">%d kilometers left</string>
+    <string name="cities_placed">%1$d cities placed (highscore: %2$d)</string>
+    <string name="select_the_location_of">Select the location of</string>
+    <string name="place_button_text">Place</string>
+    <string name="congratulation">Congratulation!</string>
+    <string name="you_right">You are absolutely right</string>
+    <string name="next_round">Play next round</string>
+    <string name="you_lose">But you lose in this game. Let\'s try again</string>
+    <string name="sorry">Sorry!</string>
+</resources>
