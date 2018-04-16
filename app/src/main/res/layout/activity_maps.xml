@@ -114,6 +114,7 @@
         android:layout_marginBottom="10dp"
         android:layout_marginEnd="10dp"
         android:text="@string/place_button_text"
+        android:enabled="false"
         />
 
 </android.support.constraint.ConstraintLayout>

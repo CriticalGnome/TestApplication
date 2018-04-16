@@ -22,6 +22,9 @@ import com.criticalgnome.testapplication.Constants.PAUSE_DURATION
 import com.criticalgnome.testapplication.Constants.PAUSE_STEP
 import com.criticalgnome.testapplication.Constants.SHARED_PREFS_KEY
 import com.criticalgnome.testapplication.Constants.SHARED_PREFS_NAME
+import com.criticalgnome.testapplication.Constants.START_LATITUDE
+import com.criticalgnome.testapplication.Constants.START_LONGITUDE
+import com.criticalgnome.testapplication.Constants.START_ZOOM
 import com.criticalgnome.testapplication.R
 import com.criticalgnome.testapplication.entity.City
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -70,7 +73,8 @@ class MapsActivity : MvpAppCompatActivity(), MapsView, OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
         mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.map_style))
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(50.12, 8.49), 4f))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(START_LATITUDE, START_LONGITUDE), START_ZOOM))
+        placeButton.isEnabled = true
     }
 
     override fun showAttemptsCount(count: Int, highScore: Int) {
